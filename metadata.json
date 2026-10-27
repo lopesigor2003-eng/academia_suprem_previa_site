@@ -1,0 +1,6 @@
+{
+  "name": "Academia Supreme",
+  "description": "Landing page institucional da Academia Supreme em Santa Maria, RS. Estrutura completa, planos flexíveis e estética futurista Cyberpunk Neon.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

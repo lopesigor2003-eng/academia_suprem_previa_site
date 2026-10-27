@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  :root {
+    --color-bg-base: #0a1122;
+    --color-bg-deep: #0e1e38;
+    --color-primary: #1b4589;
+    --color-neon: #238dc8;
+    --color-neon-bright: #00f0ff;
+    --color-neon-glow: rgba(35, 141, 200, 0.4);
+  }
+
+  html, body {
+    background-color: #0b162c;
+    color: #ffffff;
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display, button, input, select, textarea {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Futuristic Cyberpunk Neon glow utilities */
+.neon-border {
+  border-color: #238dc8;
+  box-shadow: 0 0 15px rgba(35, 141, 200, 0.25), inset 0 0 15px rgba(35, 141, 200, 0.15);
+}
+
+.neon-border-strong {
+  border-color: #00f0ff;
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.45), 0 0 10px rgba(35, 141, 200, 0.6);
+}
+
+.neon-glow-text {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.6), 0 0 20px rgba(35, 141, 200, 0.4);
+}
+
+.cyber-grid {
+  background-image: 
+    linear-gradient(to right, rgba(35, 141, 200, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(35, 141, 200, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.cyber-grid-dense {
+  background-image: 
+    linear-gradient(to right, rgba(35, 141, 200, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(35, 141, 200, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(14, 30, 56, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(35, 141, 200, 0.25);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(20, 45, 85, 0.82);
+  border-color: rgba(0, 240, 255, 0.5);
+  box-shadow: 0 10px 30px -10px rgba(0, 240, 255, 0.2);
+}
+
+/* Custom Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #091224;
+}
+::-webkit-scrollbar-thumb {
+  background: #1b4589;
+  border-radius: 4px;
+  border: 1px solid #238dc8;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #238dc8;
+}
